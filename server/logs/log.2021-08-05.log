@@ -1,0 +1,10 @@
+[2021-08-05T15:18:06.994] [ERROR] error - log error output
+[2021-08-05T15:22:16.436] [ERROR] error - log error output
+[2021-08-05T15:22:49.211] [ERROR] error - log error output
+[2021-08-05T15:23:54.784] [ERROR] error - ReferenceError: ctx is not defined
+    at D:\study\manager-fe\server\app.js:29:3
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at views (D:\study\manager-fe\server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:15)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
