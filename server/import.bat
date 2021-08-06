@@ -1,0 +1,1 @@
+mongoimport -d test-manager -c users --type=json --file ./config/data/users.json
