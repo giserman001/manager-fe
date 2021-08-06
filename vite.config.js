@@ -12,7 +12,12 @@ export default defineConfig(({command, mode}) => {
     },
     server: {
       host: 'localhost',
-      port: 8880
+      port: 8880,
+      proxy: {
+        "/api": {
+          target: 'http://localhost:3000'
+        }
+      }
     },
     build: {
       outDir: mode === 'prod' ? 'dist' : 'test'

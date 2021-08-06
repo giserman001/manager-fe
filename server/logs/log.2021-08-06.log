@@ -1,0 +1,79 @@
+[2021-08-06T16:44:28.355] [ERROR] error - TypeError: Cannot destructure property 'userName' of 'ctx.request.body1' as it is undefined.
+    at D:\study\manager-fe\server\routes\users.js:14:13
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at D:\study\manager-fe\server\app.js:31:9
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at views (D:\study\manager-fe\server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at filter (D:\study\manager-fe\server\node_modules\koa-json\index.js:25:12)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-08-06T16:45:35.096] [ERROR] error - TypeError: Cannot destructure property 'userName' of 'ctx.request.body1' as it is undefined.qqqqqqqqqqqqqqqqqq
+[2021-08-06T16:46:48.273] [ERROR] error - TypeError: Cannot destructure property 'userName' of 'ctx.request.body1' as it is undefined.qqqqqqqqqqqqqqqqqq
+[2021-08-06T16:47:16.055] [ERROR] error - TypeError: Cannot destructure property 'userName' of 'ctx.request.body1' as it is undefined.qqqqqqqqqqqqqqqqqq
+[2021-08-06T16:48:18.898] [ERROR] error - TypeError: Cannot destructure property 'userName' of 'ctx.request.body1' as it is undefined.
+    at D:\study\manager-fe\server\routes\users.js:14:13
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at D:\study\manager-fe\server\app.js:31:9
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at views (D:\study\manager-fe\server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at filter (D:\study\manager-fe\server\node_modules\koa-json\index.js:25:12)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-08-06T17:02:34.930] [ERROR] error - TypeError: Cannot destructure property 'userName' of 'ctx.request.body1' as it is undefined.
+    at D:\study\manager-fe\server\routes\users.js:14:13
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at D:\study\manager-fe\server\app.js:31:9
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at views (D:\study\manager-fe\server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at filter (D:\study\manager-fe\server\node_modules\koa-json\index.js:25:12)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+[2021-08-06T17:02:39.106] [ERROR] error - TypeError: Cannot destructure property 'userName' of 'ctx.request.body1' as it is undefined.
+    at D:\study\manager-fe\server\routes\users.js:14:13
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at D:\study\manager-fe\server\app.js:31:9
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at views (D:\study\manager-fe\server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:15)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at filter (D:\study\manager-fe\server\node_modules\koa-json\index.js:25:12)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:11)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)

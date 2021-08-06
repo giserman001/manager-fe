@@ -1,0 +1,94 @@
+<template>
+  <div class="login-wraper">
+    <div class="modal">
+      <el-form ref="userForm" :model="user" status-icon :rules="rules">
+        <div class="title">火星</div>
+        <el-form-item prop="userName">
+          <el-input v-model="user.userName" placeholder="请输用户名" type="text" prefix-icon="el-icon-user" />
+        </el-form-item>
+        <el-form-item prop="userPwd">
+          <el-input v-model="user.userPwd" placeholder="请输密码" type="password" prefix-icon="el-icon-view" />
+        </el-form-item>
+        <el-form-item>
+          <el-button type="primary" class="login-btn" @click="login">登陆</el-button>
+        </el-form-item>
+      </el-form>
+    </div>
+  </div>
+</template>
+
+<script>
+export default {
+  data(){
+    return {
+      user: {
+        userName: 'admin',
+        userPwd: '123456'
+      },
+      rules: {
+        userName: [
+          { required: true, message: '请输入用户名', trigger: 'blur' }
+        ],
+        userPwd: [
+          { required: true, message: '请输入密码', trigger: 'blur' }
+        ]
+      }
+    }
+  },
+  mounted() {
+    // this.$request({
+    //   method: 'get',
+    //   url: '/login',
+    //   data: {
+    //     name: '刘亚',
+    //     pass: '111111'
+    //   }
+    // }).then(res => {
+    //   console.log(res, '登录结果')
+    // })
+    // this.$request.get('/login', {name: '刘亚', pass: '111111'}, {mock: true, loading: true}).then(res => {
+    //   console.log(res, '登录结果')
+    // })
+  },
+  methods:{
+    login() {
+      this.$refs.userForm.validate((valid) => {
+        if(valid) {
+          this.$api.login(this.user).then(res => {
+            this.$store.commit('saveUserInfo', res)
+            this.$router.push('/welcome')
+          })
+        } else {
+          return false
+        }
+      })
+    }
+  }
+}
+</script>
+<style lang="scss" scoped>
+.login-wraper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9fcff;
+  width: 100vw;
+  height: 100vh;
+  .modal{
+    width: 500px;
+    padding: 50px;
+    background-color: #fff;
+    border-radius: 4px;
+    box-shadow: 0px 0px 10px 3px #c7c9cb4d;
+    .title{
+      font-size: 50px;
+      line-height: 1.5;
+      text-align: center;
+      margin-bottom: 30px;
+    }
+    .login-btn{
+      width: 100%;
+    }
+  }
+}
+</style>
