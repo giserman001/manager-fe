@@ -23,7 +23,7 @@ export default {
     return {
       user: {
         userName: 'admin',
-        userPwd: '123456'
+        userPwd: 'test'
       },
       rules: {
         userName: [

@@ -71,3 +71,18 @@
 [2021-08-06T17:28:07.575] [INFO] info - ****数据库连接成功****
 [2021-08-06T17:28:12.499] [INFO] info - get params:{}
 [2021-08-06T17:28:12.499] [INFO] info - post params:{"userName":"admin","userPwd":"123456"}
+[2021-08-08T15:55:56.431] [INFO] info - ****数据库连接成功****
+[2021-08-08T15:56:06.046] [INFO] info - get params:{}
+[2021-08-08T15:56:06.047] [INFO] info - post params:{"userName":"admin","userPwd":"123456"}
+[2021-08-08T15:58:53.620] [INFO] info - get params:{}
+[2021-08-08T15:58:53.623] [INFO] info - post params:{"userName":"admin","userPwd":"test"}
+[2021-08-08T19:41:34.659] [INFO] info - get params:{}
+[2021-08-08T19:41:34.668] [INFO] info - post params:{}
+[2021-08-08T19:41:34.682] [INFO] info - get params:{}
+[2021-08-08T19:41:34.683] [INFO] info - post params:{}
+[2021-08-08T20:00:13.215] [INFO] info - get params:{}
+[2021-08-08T20:00:13.218] [INFO] info - post params:{"userName":"admin","userPwd":"123456"}
+[2021-08-08T20:00:17.629] [INFO] info - get params:{}
+[2021-08-08T20:00:17.629] [INFO] info - post params:{"userName":"admin","userPwd":"test"}
+[2021-08-08T20:04:51.332] [INFO] info - get params:{}
+[2021-08-08T20:04:51.333] [INFO] info - post params:{"userName":"admin","userPwd":"test"}
