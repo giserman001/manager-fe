@@ -34,8 +34,9 @@ module.exports = {
     log4js.debug(`数据库返回值=>${JSON.stringify(data)}`)
     return { code, data, msg }
   },
-  fail(msg = '', data = '', code = CODE.BUSINESS_ERROR) {
+  fail(msg = '', code = CODE.BUSINESS_ERROR, data = '') {
     log4js.debug(msg)
     return { code, data, msg }
   },
+  CODE
 }

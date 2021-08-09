@@ -1,8 +1,7 @@
 import { createRouter, createWebHashHistory } from 'vue-router'
 import Home from '@/components/Home.vue'
 
-const routes = [
-  {
+const routes = [{
     name: 'home',
     path: '/',
     component: Home,
@@ -10,16 +9,21 @@ const routes = [
       title: '首页',
     },
     redirect: '/welcome',
-    children: [
-      {
+    children: [{
         name: 'welcome',
         path: '/welcome',
         meta: {
           title: '欢迎页',
         },
         component: () => import('@/views/home/Welcome.vue'),
-      }
-    ]
+      }, {
+        name: 'User',
+        path: '/user',
+        meta: {
+          title: '用户管理',
+        },
+        component: () => import('@/views/account/User.vue'),
+      }]
   }, {
     name: 'login',
     path: '/login',
@@ -27,8 +31,7 @@ const routes = [
       title: '登录',
     },
     component: () => import('@/views/login/Login.vue'),
-  }
-]
+  }]
 
 const router = createRouter({
   history: createWebHashHistory(),

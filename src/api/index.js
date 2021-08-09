@@ -7,9 +7,9 @@ export default {
     return request({ url: '/users/login', method: 'post', data: params })
   },
   noticeCount() {
-    return request({ url: '/leave/count', method: 'get' })
+    return request({ url: '/leave/count', method: 'get', mock: true })
   },
   getMenuList() {
-    return request({ url: '/menu/list', method: 'get' })
+    return request({ url: '/menu/list', method: 'get', mock: true })
   },
 }

@@ -1,0 +1,47 @@
+[2021-08-09T11:02:16.543] [ERROR] error - ****数据库连接失败****
+[2021-08-09T16:20:02.272] [ERROR] error - TokenExpiredError: jwt expired
+    at D:\study\manager-fe\server\node_modules\jsonwebtoken\verify.js:152:21
+    at getSecret (D:\study\manager-fe\server\node_modules\jsonwebtoken\verify.js:90:14)
+    at Object.module.exports [as verify] (D:\study\manager-fe\server\node_modules\jsonwebtoken\verify.js:94:10)
+    at D:\study\manager-fe\server\app.js:46:23
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at D:\study\manager-fe\server\app.js:34:9
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at views (D:\study\manager-fe\server\node_modules\koa-views\src\index.js:91:12)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:15)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-09T16:41:26.978] [ERROR] error - UnauthorizedError: Authentication Error
+    at Object.throw (D:\study\manager-fe\server\node_modules\koa\lib\context.js:97:11)
+    at jwt (D:\study\manager-fe\server\node_modules\koa-jwt\lib\index.js:66:26)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\study\manager-fe\server\app.js:36:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-09T16:43:00.270] [ERROR] error - UnauthorizedError: Authentication Error
+    at Object.throw (D:\study\manager-fe\server\node_modules\koa\lib\context.js:97:11)
+    at jwt (D:\study\manager-fe\server\node_modules\koa-jwt\lib\index.js:66:26)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\study\manager-fe\server\app.js:36:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-09T16:43:12.501] [ERROR] error - UnauthorizedError: Authentication Error
+    at Object.throw (D:\study\manager-fe\server\node_modules\koa\lib\context.js:97:11)
+    at jwt (D:\study\manager-fe\server\node_modules\koa-jwt\lib\index.js:66:26)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\study\manager-fe\server\app.js:36:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-09T16:44:35.584] [ERROR] error - UnauthorizedError: Authentication Error
+    at Object.throw (D:\study\manager-fe\server\node_modules\koa\lib\context.js:97:11)
+    at jwt (D:\study\manager-fe\server\node_modules\koa-jwt\lib\index.js:66:26)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\study\manager-fe\server\app.js:36:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
