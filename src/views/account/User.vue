@@ -1,14 +1,14 @@
 <template>
   <div class="user-manager">
     <div class="query-form">
-      <el-form :model="user" inline>
-        <el-form-item>
+      <el-form ref="queryForm" :model="user" inline>
+        <el-form-item label="用户id" prop="userId">
           <el-input v-model="user.userId" placeholder="请输入用户id" />
         </el-form-item>
-        <el-form-item>
+        <el-form-item label="用户名称" prop="userName">
           <el-input v-model="user.userName" placeholder="请输入用户名称" />
         </el-form-item>
-        <el-form-item>
+        <el-form-item label="用户状态" prop="state">
           <el-select v-model="user.state">
             <el-option :value="0" label="所有"></el-option>
             <el-option :value="1" label="在职"></el-option>
@@ -17,8 +17,8 @@
           </el-select>
         </el-form-item>
         <el-form-item>
-          <el-button type="primary">查询</el-button>
-          <el-button type="primary">重置</el-button>
+          <el-button type="primary" @click="handleQuery">查询</el-button>
+          <el-button type="primary" @click="handleReset">重置</el-button>
         </el-form-item>
       </el-form>
     </div>
@@ -36,45 +36,44 @@
           :label="item.label"
         >
         </el-table-column>
-        <el-table-column label="操作" width="100">
+        <el-table-column label="操作" width="160">
             <template v-slot:default="{ row }">
-                <el-button @click="handleClick(row)" type="text" size="small">编辑</el-button>
-                <el-button @click="delFn(row)" type="text" size="small">删除</el-button>
+                <el-button @click="handleClick(row)" size="mini">编辑</el-button>
+                <el-button @click="delFn(row)" type="danger" size="mini">删除</el-button>
             </template>
         </el-table-column>
       </el-table>
+      <el-pagination
+        class="pagination"
+        background
+        layout="prev, pager, next"
+        :total="pages.total"
+        :page-size="pages.pageSize"
+        @current-change="handleCurrentChange"
+      />
     </div>
   </div>
 </template>
 
 <script>
 // composition api去写项目
-import { reactive, onMounted, ref } from 'vue'
+import { reactive, onMounted, ref, getCurrentInstance } from 'vue'
 export default {
   name: 'User',
   setup() {
-    const user = reactive({})
-    const userList = ref([{
-        "state": 1,
-        "role": "0",
-        "roleList": [
-          "60180b07b1eaed6c45fbebdb",
-          "60150cb764de99631b2c3cd3",
-          "60180b59b1eaed6c45fbebdc"
-        ],
-        "deptId": [
-          "60167059c9027b7d2c520a61",
-          "60167345c6a4417f2d27506f"
-        ],
-        "userId": 1000002,
-        "userName": "admin",
-        "userEmail": "admin@imooc.com",
-        "createTime": "2021-01-17T13:32:06.381Z",
-        "lastLoginTime": "2021-01-17T13:32:06.381Z",
-        "__v": 0,
-        "job": "前端架构师",
-        "mobile": "17611020000"
-      }])
+    // 获取composition api 上下文对象
+    const instance = getCurrentInstance()
+    const user = reactive({
+      userId: '',
+      userName: '',
+      state: 1
+    })
+    const userList = ref([])
+    const pages = reactive({
+      pageNum: 1,
+      pageSize: 10,
+      total: 0
+    })
     const columns = reactive([
       {
         label: '用户ID',
@@ -86,7 +85,7 @@ export default {
       },
       {
         label: '用户邮箱',
-        prop: 'userEnail',
+        prop: 'userEmail',
       },
       {
         label: '用户角色',
@@ -106,16 +105,46 @@ export default {
       },
     ])
     onMounted(() => {
-      console.log('11111')
+      getUserList()
     })
+    const getUserList = async() => {
+      try {
+        const params = {...user, ...pages}
+        const { list, page } = await instance.proxy.$api.getUserList(params)
+        console.log(list, page, 'ddddddddddddddd')
+        userList.value = list
+        pages.total = page.total
+      } catch (error) {
+        console.log(error)
+      }
+    }
     const handleClick = () => {}
     const delFn = () => {}
+    // 查询
+    const handleQuery = () => {
+      getUserList()
+    }
+    // 重置
+    const handleReset = () => {
+      instance.proxy.$refs.queryForm.resetFields()
+      getUserList()
+    }
+    // 分页事件处理
+    const handleCurrentChange = (current) => {
+      pages.pageNum = current
+      getUserList()
+    }
     return {
       user,
       userList,
       columns,
       handleClick,
-      delFn
+      delFn,
+      getUserList,
+      pages,
+      handleReset,
+      handleQuery,
+      handleCurrentChange
     }
   },
 }

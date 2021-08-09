@@ -263,3 +263,6 @@
 [2021-08-09T17:20:46.472] [INFO] info - get params:{}
 [2021-08-09T17:20:46.477] [INFO] info - post params:{"userName":"admin","userPwd":"test"}
 [2021-08-09T18:20:14.224] [INFO] info - ****数据库连接成功****
+[2021-08-09T21:31:02.204] [INFO] info - ****数据库连接成功****
+[2021-08-09T21:31:33.105] [INFO] info - get params:{}
+[2021-08-09T21:31:33.106] [INFO] info - post params:{"userName":"admin","userPwd":"test"}
