@@ -16,7 +16,7 @@ export default {
     return request({ url: '/users/list', method: 'get', data: params, mock: false })
   },
   delUsers(params) {
-    return request({ url: '/users/delete', method: 'post', data: params, mock: true })
+    return request({ url: '/users/delete', method: 'post', data: params, mock: false })
   },
   getAllRole(params) {
     return request({ url: '/roles/allList', method: 'get', data: params, mock: true })

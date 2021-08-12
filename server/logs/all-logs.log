@@ -292,3 +292,49 @@
 [2021-08-12T16:50:38.048] [INFO] info - post params:{}
 [2021-08-12T17:15:23.771] [INFO] info - ****数据库连接成功****
 [2021-08-12T17:15:26.555] [INFO] info - ****数据库连接成功****
+[2021-08-12T20:50:40.564] [INFO] info - ****数据库连接成功****
+[2021-08-12T21:12:03.684] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:12:03.688] [INFO] info - post params:{}
+[2021-08-12T21:12:08.103] [INFO] info - get params:{}
+[2021-08-12T21:12:08.103] [INFO] info - post params:{"userName":"admin","userPwd":"test"}
+[2021-08-12T21:12:12.848] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:12:12.848] [INFO] info - post params:{}
+[2021-08-12T21:12:34.272] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:12:34.272] [INFO] info - post params:{}
+[2021-08-12T21:14:30.358] [INFO] info - ****数据库连接成功****
+[2021-08-12T21:14:37.863] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:14:37.863] [INFO] info - post params:{}
+[2021-08-12T21:15:42.062] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:15:42.062] [INFO] info - post params:{}
+[2021-08-12T21:23:43.602] [INFO] info - ****数据库连接成功****
+[2021-08-12T21:33:45.090] [INFO] info - ****数据库连接成功****
+[2021-08-12T21:38:33.161] [INFO] info - ****数据库连接成功****
+[2021-08-12T21:38:36.214] [INFO] info - ****数据库连接成功****
+[2021-08-12T21:39:01.308] [INFO] info - ****数据库连接成功****
+[2021-08-12T21:39:36.576] [INFO] info - ****数据库连接成功****
+[2021-08-12T21:41:38.391] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:41:38.393] [INFO] info - post params:{}
+[2021-08-12T21:42:28.488] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:42:28.488] [INFO] info - post params:{}
+[2021-08-12T21:43:12.394] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:43:12.396] [INFO] info - post params:{}
+[2021-08-12T21:43:33.389] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:43:33.392] [INFO] info - post params:{}
+[2021-08-12T21:43:53.148] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"2"}
+[2021-08-12T21:43:53.148] [INFO] info - post params:{}
+[2021-08-12T21:44:25.981] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:44:25.982] [INFO] info - post params:{}
+[2021-08-12T21:44:28.939] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:44:28.940] [INFO] info - post params:{}
+[2021-08-12T21:44:33.210] [INFO] info - get params:{}
+[2021-08-12T21:44:33.211] [INFO] info - post params:{"userIds":[1000002,1000003]}
+[2021-08-12T21:44:33.428] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"2"}
+[2021-08-12T21:44:33.429] [INFO] info - post params:{}
+[2021-08-12T21:45:19.184] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:45:19.184] [INFO] info - post params:{}
+[2021-08-12T21:45:31.965] [INFO] info - get params:{}
+[2021-08-12T21:45:31.965] [INFO] info - post params:{"userIds":[1000002]}
+[2021-08-12T21:45:32.230] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"2"}
+[2021-08-12T21:45:32.231] [INFO] info - post params:{}
+[2021-08-12T21:46:00.888] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:46:00.890] [INFO] info - post params:{}
