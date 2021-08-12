@@ -22,7 +22,7 @@ export default {
       if (new RegExp(`(${k})`).test(fmt)) {
         const val = `${o[k]}`
         // egExp.$1是RegExp的一个属性,指的是与正则表达式匹配的第一个 子匹配(以括号为标志)字符串，以此类推，RegExp.$2，RegExp.$3，..RegExp.$99总共可以有99个匹配
-        fmt = fmt.replace(RegExp.$1, RegExp.$1.length === 1)
+        fmt = fmt.replace(RegExp.$1, val)
       }
     }
     return fmt
