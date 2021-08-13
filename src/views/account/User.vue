@@ -133,7 +133,7 @@ export default {
     const user = reactive({
       userId: '',
       userName: '',
-      state: 0,
+      state: 1,
     })
     const showModal = ref(false)
     const userForm = reactive({
@@ -154,7 +154,7 @@ export default {
     const rules = reactive({
       userName: [{ required: true, message: '请输入用户名称', trigger: 'blur' }],
       userEmail: [{ required: true, message: '请输入邮箱', trigger: 'blur' }],
-      mobile: [{ pattern: /1{3-9}\d{9}/, message: '请输入正确手机号格式', trigger: 'blur' }],
+      mobile: [{ pattern: /1[3-9]\d{9}/, message: '请输入正确手机号格式', trigger: 'blur' }],
       roleList: [{ required: true, message: '请选择角色', trigger: 'blur' }],
       deptId: [{ required: true, message: '请选择部门', trigger: 'change' }],
     })
@@ -172,6 +172,10 @@ export default {
       {
         label: '用户名称',
         prop: 'userName',
+      },
+      {
+        label: '岗位',
+        prop: 'job',
       },
       {
         label: '用户邮箱',
@@ -342,6 +346,7 @@ export default {
       deptList,
       handleCancel,
       handleSubmit,
+      action
     }
   },
 }

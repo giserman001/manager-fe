@@ -25,6 +25,6 @@ export default {
     return request({ url: '/dept/list', method: 'get', data: params, mock: true })
   },
   userSubmit(params) {
-    return request({ url: '/users/operate', method: 'post', data: params, mock: true })
+    return request({ url: '/users/operate', method: 'post', data: params, mock: false })
   },
 }

@@ -4,6 +4,8 @@
 const config = require('./index')
 const log4js = require('../utils/log4j')
 const mongoose = require('mongoose')
+// 消除对findOneAndUpdate使用的警告
+mongoose.set('useFindAndModify', false)
 
 mongoose.connect(config.URL, { useNewUrlParser: true, useUnifiedTopology: true })
 
