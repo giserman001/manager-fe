@@ -292,61 +292,49 @@
 [2021-08-12T16:50:38.048] [INFO] info - post params:{}
 [2021-08-12T17:15:23.771] [INFO] info - ****数据库连接成功****
 [2021-08-12T17:15:26.555] [INFO] info - ****数据库连接成功****
-[2021-08-12T17:32:14.912] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T17:32:14.914] [INFO] info - post params:{}
-[2021-08-12T17:32:37.642] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T17:32:37.643] [INFO] info - post params:{}
-[2021-08-12T17:32:42.114] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T17:32:42.114] [INFO] info - post params:{}
-[2021-08-12T18:02:12.961] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:02:12.963] [INFO] info - post params:{}
-[2021-08-12T18:02:15.111] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:02:15.112] [INFO] info - post params:{}
-[2021-08-12T18:02:17.125] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:02:17.126] [INFO] info - post params:{}
-[2021-08-12T18:02:23.824] [INFO] info - get params:{}
-[2021-08-12T18:02:23.824] [INFO] info - post params:{"userName":"admin","userPwd":"test"}
-[2021-08-12T18:02:27.895] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:02:27.895] [INFO] info - post params:{}
-[2021-08-12T18:02:32.193] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:02:32.193] [INFO] info - post params:{}
-[2021-08-12T18:03:15.143] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:03:15.145] [INFO] info - post params:{}
-[2021-08-12T18:04:36.045] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:04:36.046] [INFO] info - post params:{}
-[2021-08-12T18:05:02.583] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:05:02.583] [INFO] info - post params:{}
-[2021-08-12T18:05:06.093] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:05:06.093] [INFO] info - post params:{}
-[2021-08-12T18:05:20.598] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:05:20.598] [INFO] info - post params:{}
-[2021-08-12T18:05:35.715] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:05:35.715] [INFO] info - post params:{}
-[2021-08-12T18:05:39.210] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:05:39.210] [INFO] info - post params:{}
-[2021-08-12T18:05:47.539] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:05:47.541] [INFO] info - post params:{}
-[2021-08-12T18:06:31.164] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:06:31.164] [INFO] info - post params:{}
-[2021-08-12T18:06:34.179] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:06:34.180] [INFO] info - post params:{}
-[2021-08-12T18:06:56.452] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:06:56.453] [INFO] info - post params:{}
-[2021-08-12T18:06:57.930] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:06:57.930] [INFO] info - post params:{}
-[2021-08-12T18:07:18.182] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:07:18.183] [INFO] info - post params:{}
-[2021-08-12T18:07:20.296] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:07:20.296] [INFO] info - post params:{}
-[2021-08-12T18:07:23.668] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:07:23.671] [INFO] info - post params:{}
-[2021-08-12T18:08:11.304] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:08:11.305] [INFO] info - post params:{}
-[2021-08-12T18:08:15.396] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:08:15.396] [INFO] info - post params:{}
-[2021-08-12T18:09:16.555] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:09:16.560] [INFO] info - post params:{}
-[2021-08-12T18:09:55.205] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:09:55.206] [INFO] info - post params:{}
-[2021-08-12T18:11:16.302] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
-[2021-08-12T18:11:16.303] [INFO] info - post params:{}
+[2021-08-12T20:50:40.564] [INFO] info - ****数据库连接成功****
+[2021-08-12T21:12:03.684] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:12:03.688] [INFO] info - post params:{}
+[2021-08-12T21:12:08.103] [INFO] info - get params:{}
+[2021-08-12T21:12:08.103] [INFO] info - post params:{"userName":"admin","userPwd":"test"}
+[2021-08-12T21:12:12.848] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:12:12.848] [INFO] info - post params:{}
+[2021-08-12T21:12:34.272] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:12:34.272] [INFO] info - post params:{}
+[2021-08-12T21:14:30.358] [INFO] info - ****数据库连接成功****
+[2021-08-12T21:14:37.863] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:14:37.863] [INFO] info - post params:{}
+[2021-08-12T21:15:42.062] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:15:42.062] [INFO] info - post params:{}
+[2021-08-12T21:23:43.602] [INFO] info - ****数据库连接成功****
+[2021-08-12T21:33:45.090] [INFO] info - ****数据库连接成功****
+[2021-08-12T21:38:33.161] [INFO] info - ****数据库连接成功****
+[2021-08-12T21:38:36.214] [INFO] info - ****数据库连接成功****
+[2021-08-12T21:39:01.308] [INFO] info - ****数据库连接成功****
+[2021-08-12T21:39:36.576] [INFO] info - ****数据库连接成功****
+[2021-08-12T21:41:38.391] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:41:38.393] [INFO] info - post params:{}
+[2021-08-12T21:42:28.488] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:42:28.488] [INFO] info - post params:{}
+[2021-08-12T21:43:12.394] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:43:12.396] [INFO] info - post params:{}
+[2021-08-12T21:43:33.389] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:43:33.392] [INFO] info - post params:{}
+[2021-08-12T21:43:53.148] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"2"}
+[2021-08-12T21:43:53.148] [INFO] info - post params:{}
+[2021-08-12T21:44:25.981] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:44:25.982] [INFO] info - post params:{}
+[2021-08-12T21:44:28.939] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:44:28.940] [INFO] info - post params:{}
+[2021-08-12T21:44:33.210] [INFO] info - get params:{}
+[2021-08-12T21:44:33.211] [INFO] info - post params:{"userIds":[1000002,1000003]}
+[2021-08-12T21:44:33.428] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"2"}
+[2021-08-12T21:44:33.429] [INFO] info - post params:{}
+[2021-08-12T21:45:19.184] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:45:19.184] [INFO] info - post params:{}
+[2021-08-12T21:45:31.965] [INFO] info - get params:{}
+[2021-08-12T21:45:31.965] [INFO] info - post params:{"userIds":[1000002]}
+[2021-08-12T21:45:32.230] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"2"}
+[2021-08-12T21:45:32.231] [INFO] info - post params:{}
+[2021-08-12T21:46:00.888] [INFO] info - get params:{"userId":"","userName":"","state":"0","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-12T21:46:00.890] [INFO] info - post params:{}

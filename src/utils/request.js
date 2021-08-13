@@ -52,15 +52,16 @@ function request(options) {
   if (options.method.toLowerCase() === 'get') {
     options.params = options.data
   }
+  let isMock = config.mock
   // 局部接口mock
   if (typeof options.mock != 'undefined') {
-    config.mock = options.mock
+    isMock = options.mock
   }
   // 以防万一，确保万无一失
   if (config.env === 'prod') {
     service.defaults.baseURL = config.baseApi
   } else {
-    service.defaults.baseURL = config.mock ? config.mockApi : config.baseApi
+    service.defaults.baseURL = isMock ? config.mockApi : config.baseApi
   }
   return service(options)
 }

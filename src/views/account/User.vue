@@ -129,11 +129,11 @@ export default {
   name: 'User',
   setup() {
     // 获取composition api 上下文对象
-    const instance = getCurrentInstance()
+    const { proxy } = getCurrentInstance()
     const user = reactive({
       userId: '',
       userName: '',
-      state: 1,
+      state: 0,
     })
     const showModal = ref(false)
     const userForm = reactive({
@@ -225,7 +225,7 @@ export default {
     const getUserList = async () => {
       try {
         const params = { ...user, ...pages }
-        const { list, page } = await instance.proxy.$api.getUserList(params)
+        const { list, page } = await proxy.$api.getUserList(params)
         userList.value = list
         pages.total = page.total
       } catch (error) {
@@ -238,15 +238,15 @@ export default {
       action.value = 'edit'
       // Object.assign() 方法用于将所有可枚举属性的值从一个或多个源对象分配到目标对象。它将返回目标对象
       // 这里有个坑，无法通过element from重置表单了(细究原因。),解决办法就是用nextTick
-      // instance.proxy.$nextTick(() => {})
+      // proxy.$nextTick(() => {})
       nextTick(() => {
         Object.assign(userForm, row)
       })
     }
     // 单个删除
     const delFn = async (row) => {
-      await instance.proxy.$api.delUsers({ userIds: [row.userId] })
-      instance.proxy.$message.success('删除成功')
+      await proxy.$api.delUsers({ userIds: [row.userId] })
+      proxy.$message.success('删除成功')
       getUserList()
     }
     // 查询
@@ -255,7 +255,7 @@ export default {
     }
     // 重置
     const handleReset = (form) => {
-      instance.proxy.$refs[form].resetFields()
+      proxy.$refs[form].resetFields()
       getUserList()
     }
     // 分页事件处理
@@ -266,15 +266,15 @@ export default {
     // 批量删除
     const handlePatchDel = async () => {
       if (!checkUsersIds.value.length) {
-        instance.proxy.$message.error('请选择要删除的用户')
+        proxy.$message.error('请选择要删除的用户')
         return
       }
-      const res = await instance.proxy.$api.delUsers({ userIds: checkUsersIds.value })
+      const res = await proxy.$api.delUsers({ userIds: checkUsersIds.value })
       if (res.nModified > 0) {
-        instance.proxy.$message.success('删除成功')
+        proxy.$message.success('删除成功')
         getUserList()
       } else {
-        instance.proxy.$message.error('删除失败')
+        proxy.$message.error('删除失败')
       }
     }
     // 表格多选
@@ -288,12 +288,12 @@ export default {
     }
     // 获取角色列表
     const getRoleList = async () => {
-      const list = await instance.proxy.$api.getAllRole()
+      const list = await proxy.$api.getAllRole()
       roleList.value = list
     }
     // 获取部门列表
     const getDeptList = async () => {
-      const list = await instance.proxy.$api.getAllDept()
+      const list = await proxy.$api.getAllDept()
       deptList.value = list
     }
     // 用户新增取消
@@ -303,7 +303,7 @@ export default {
     }
     // 用户新增提交
     const handleSubmit = () => {
-      instance.proxy.$refs.dialogForm.validate(async (valid) => {
+      proxy.$refs.dialogForm.validate(async (valid) => {
         // 我们就可以通过toRaw方法拿到它的原始数据, 对原始数据进行修改,这样就不会被追踪, 这样就不会更新UI界面, 这样性能就好了
         // 换句话说：响应式对象转化成普通对象 (目标： 提高性能)
         if (valid) {
@@ -311,8 +311,8 @@ export default {
           const params = toRaw(userForm)
           params.userEmail += '@imooc.com'
           params.action = action.value
-          await instance.proxy.$api.userSubmit(params)
-          instance.proxy.$message.success('提交成功')
+          await proxy.$api.userSubmit(params)
+          proxy.$message.success('提交成功')
           // 重置表单
           handleReset('dialogForm')
           // 刷新用户列表数据

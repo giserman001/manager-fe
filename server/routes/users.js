@@ -66,4 +66,22 @@ router.get('/list', async (ctx) => {
   }
 })
 
+// 用户批量删除
+router.post('/delete', async (ctx) => {
+  try {
+    // 接收参数
+    const { userIds } = ctx.request.body
+    // 两种方式都可以更新数据
+    // User.updateMany({$or: [{userId: ''}, {userId: ''}]}, {state: 2})
+    const res = await User.updateMany({userId: { $in: userIds }}, {state: 2})
+    if(res.nModified) {
+      ctx.body = util.success(res, `共删除成功${res.nModified}条`)
+      return
+    }
+    ctx.body = util.fail('删除失败')
+  } catch (error) {
+    ctx.body = util.fail(`${error.stack}`)
+  }
+})
+
 module.exports = router
