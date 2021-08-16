@@ -18,11 +18,18 @@ const routes = [{
         component: () => import('@/views/home/Welcome.vue'),
       }, {
         name: 'User',
-        path: '/user',
+        path: '/system/user',
         meta: {
           title: '用户管理',
         },
         component: () => import('@/views/account/User.vue'),
+      }, {
+        name: 'Menu',
+        path: '/system/menu',
+        meta: {
+          title: '菜单管理',
+        },
+        component: () => import('@/views/account/Menu.vue'),
       }]
   }, {
     name: 'login',

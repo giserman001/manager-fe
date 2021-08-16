@@ -646,3 +646,14 @@
 [2021-08-13T17:11:13.615] [INFO] info - post params:{}
 [2021-08-13T17:15:43.890] [INFO] info - ****数据库连接成功****
 [2021-08-13T18:06:09.291] [INFO] info - ****数据库连接成功****
+[2021-08-16T09:58:44.665] [INFO] info - ****数据库连接成功****
+[2021-08-16T10:36:42.157] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-16T10:36:51.241] [INFO] info - post params:{}
+[2021-08-16T10:36:51.262] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-16T10:36:51.263] [INFO] info - post params:{}
+[2021-08-16T10:36:55.345] [INFO] info - get params:{}
+[2021-08-16T10:36:55.345] [INFO] info - post params:{"userName":"admin","userPwd":"test"}
+[2021-08-16T10:52:40.999] [INFO] info - get params:{}
+[2021-08-16T10:52:41.000] [INFO] info - post params:{"userName":"admin","userPwd":"e10adc3949ba59abbe56e057f20f883e"}
+[2021-08-16T10:52:44.064] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-16T10:52:44.065] [INFO] info - post params:{}
