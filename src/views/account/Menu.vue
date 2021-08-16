@@ -24,8 +24,7 @@
       <div class="action">
         <el-button type="primary" @click="handleClickAdd(1)">新增</el-button>
       </div>
-      <el-table :data="menuList" @selection-change="handleSelectionChange" row-key="_id" :tree-props="{children: 'children'}">
-        <el-table-column type="selection" width="55" />
+      <el-table :data="menuList" row-key="_id" :tree-props="{children: 'children'}">
         <el-table-column
           v-for="(item, index) in columns"
           :key="index"
@@ -187,7 +186,6 @@ export default {
         this.menuForm.parentId = [...row.parentId, row._id].filter(item => item)
       }
     },
-    handleSelectionChange() {},
     handleEdit(row) {
       this.showModal = true
       this.action = 'edit'
