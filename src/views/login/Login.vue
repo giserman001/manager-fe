@@ -23,7 +23,7 @@ export default {
     return {
       user: {
         userName: 'admin',
-        userPwd: 'test'
+        userPwd: 'e10adc3949ba59abbe56e057f20f883e'
       },
       rules: {
         userName: [
@@ -34,21 +34,6 @@ export default {
         ]
       }
     }
-  },
-  mounted() {
-    // this.$request({
-    //   method: 'get',
-    //   url: '/login',
-    //   data: {
-    //     name: '刘亚',
-    //     pass: '111111'
-    //   }
-    // }).then(res => {
-    //   console.log(res, '登录结果')
-    // })
-    // this.$request.get('/login', {name: '刘亚', pass: '111111'}, {mock: true, loading: true}).then(res => {
-    //   console.log(res, '登录结果')
-    // })
   },
   methods:{
     login() {
