@@ -27,4 +27,7 @@ export default {
   userSubmit(params) {
     return request({ url: '/users/operate', method: 'post', data: params, mock: false })
   },
+  menuSubmit(params) {
+    return request({ url: '/menu/operate', method: 'post', data: params, mock: true })
+  },
 }

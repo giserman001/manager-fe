@@ -22,13 +22,10 @@ router.post('/login', async (ctx) => {
      * 2. {userId: 1, userName: 1} 其中1代表返回 0 代表不返回
      * 3. select('userId')
      */
-    const res = await User.findOne(
-      { userName, userPwd },
-      'userId userName userEmail state role deptId roleList'
-    )
-    const data = res._doc
-    const token = jwt.sign({ data }, 'imooc', { expiresIn: '1h' })
+    const res = await User.findOne({ userName, userPwd }, 'userId userName userEmail state role deptId roleList')
     if (res) {
+      const data = res._doc
+      const token = jwt.sign({ data }, 'imooc', { expiresIn: '1h' })
       ctx.body = util.success({ ...data, token })
     } else {
       ctx.body = util.fail('账号或密码不正确')

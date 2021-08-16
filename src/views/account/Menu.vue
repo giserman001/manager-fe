@@ -23,7 +23,6 @@
     <div class="base-table">
       <div class="action">
         <el-button type="primary" @click="handleClickAdd(1)">新增</el-button>
-        <el-button type="danger" @click="handlePatchDel">批量删除</el-button>
       </div>
       <el-table :data="menuList" @selection-change="handleSelectionChange" row-key="_id" :tree-props="{children: 'children'}">
         <el-table-column type="selection" width="55" />
@@ -38,9 +37,9 @@
         </el-table-column>
         <el-table-column label="操作" width="220">
           <template v-slot:default="{ row }">
-            <el-button @click="handleClickAdd(2, row)" size="mini">新增</el-button>
+            <el-button @click="handleClickAdd(2, row)" type="primary" size="mini">新增</el-button>
             <el-button @click="handleEdit(row)" size="mini">编辑</el-button>
-            <el-button @click="delFn(row)" type="danger" size="mini">删除</el-button>
+            <el-button @click="delFn(row._id)" type="danger" size="mini">删除</el-button>
           </template>
         </el-table-column>
       </el-table>
@@ -67,19 +66,19 @@
         <el-form-item label="菜单名称" prop="menuName">
           <el-input v-model="menuForm.menuName" placeholder="请输入菜单名称" />
         </el-form-item>
-        <el-form-item label="菜单图标" prop="icon">
+        <el-form-item label="菜单图标" prop="icon" v-if="menuForm.menuType === '1'">
           <el-input v-model="menuForm.icon" placeholder="请输入菜单图标" />
         </el-form-item>
-        <el-form-item label="路由地址" prop="path">
+        <el-form-item label="路由地址" prop="path" v-if="menuForm.menuType === '1'">
           <el-input v-model="menuForm.path" placeholder="请输入路由地址" />
         </el-form-item>
-        <el-form-item label="权限标识" prop="menuCode">
+        <el-form-item label="权限标识" prop="menuCode" v-if="menuForm.menuType === '2'">
           <el-input v-model="menuForm.menuCode" placeholder="请输入权限标识" />
         </el-form-item>
-        <el-form-item label="组件路径" prop="component">
+        <el-form-item label="组件路径" prop="component" v-if="menuForm.menuType === '1'">
           <el-input v-model="menuForm.component" placeholder="请输入组件路径" />
         </el-form-item>
-        <el-form-item label="菜单状态" prop="menuState">
+        <el-form-item label="菜单状态" prop="menuState" v-if="menuForm.menuType === '1'">
           <el-radio-group v-model="menuForm.menuState">
             <el-radio label="1">正常</el-radio>
             <el-radio label="2">停用</el-radio>
@@ -87,7 +86,7 @@
         </el-form-item>
       </el-form>
       <template v-slot:footer>
-        <el-button @click="showModal = false">取 消</el-button>
+        <el-button @click="handleClose">取 消</el-button>
         <el-button type="primary" @click="handleSubmit">确 定</el-button>
       </template>
     </el-dialog>
@@ -147,15 +146,24 @@ export default {
         }
       }],
       showModal: false,
-      rules: [],
+      rules: {
+        menuName: [
+          {required: true, message: '请输入菜单名称', trigger: 'blur'},
+          {min: 2, max: 10, message: '长度在2-8之间', trigger: 'blur'}
+        ]
+      },
       action: 'add',
-      menuForm: {}
+      menuForm: {
+        menuType: '1',
+        menuState: '1'
+      }
     }
   },
   mounted() {
     this.getMenuList()
   },
   methods: {
+    // 菜单列表
     async getMenuList() {
       try {
         const list = await this.$api.getMenuList(this.queryForm)
@@ -164,8 +172,14 @@ export default {
         throw new Error(error)
       }
     },
-    handleQuery() {},
-    handleReset() {},
+    handleQuery() {
+      this.getMenuList()
+    },
+    // 表单重置
+    handleReset(form) {
+      this.$refs[form].resetFields()
+      this.getMenuList()
+    },
     handleClickAdd(type, row) {
       this.showModal = true
       this.action = 'add'
@@ -173,13 +187,40 @@ export default {
         this.menuForm.parentId = [...row.parentId, row._id].filter(item => item)
       }
     },
-    handlePatchDel() {},
     handleSelectionChange() {},
-    handleEdit() {},
-    delFn() {},
-    handleSubmit() {}
+    handleEdit(row) {
+      this.showModal = true
+      this.action = 'edit'
+      this.$nextTick(() => {
+        this.menuForm = row
+      })
+    },
+    async delFn(id) {
+      await this.$api.menuSubmit({_id: id, action: 'delete'})
+      this.$message.success('删除成功')
+      this.getMenuList()
+    },
+    handleSubmit() {
+      this.$refs.dialogForm.validate(async(valid) => {
+        if(valid) {
+          const {action}  = this
+          const params = {...this.menuForm, action}
+          try {
+            await this.$api.menuSubmit(params)
+            this.showModal = false
+            this.handleReset('dialogForm')
+          } catch (error) {
+            throw new Error(error)
+          }
+        }
+      })
+    },
+    handleClose() {
+      this.showModal = false
+      this.handleReset('dialogForm')
+    }
   }
 }
 </script>
 
-<style></style>
+<style></style> 
