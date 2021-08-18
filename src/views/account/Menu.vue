@@ -153,6 +153,7 @@ export default {
       },
       action: 'add',
       menuForm: {
+        parentId: [null],
         menuType: '1',
         menuState: '1'
       }
@@ -201,11 +202,12 @@ export default {
     handleSubmit() {
       this.$refs.dialogForm.validate(async(valid) => {
         if(valid) {
-          const {action}  = this
+          const { action }  = this
           const params = {...this.menuForm, action}
           try {
             await this.$api.menuSubmit(params)
             this.showModal = false
+            this.$message.success('操作成功')
             this.handleReset('dialogForm')
           } catch (error) {
             throw new Error(error)

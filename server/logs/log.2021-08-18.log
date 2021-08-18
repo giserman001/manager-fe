@@ -1,0 +1,314 @@
+[2021-08-18T16:59:58.191] [ERROR] error - ReferenceError: cts is not defined
+    at D:\study\manager-fe\server\routes\menus.js:11:35
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at allowedMethods (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:407:12)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at jwt (D:\study\manager-fe\server\node_modules\koa-jwt\lib\index.js:73:16)
+    at async D:\study\manager-fe\server\app.js:35:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-18T16:59:58.245] [ERROR] error - ReferenceError: cts is not defined
+    at D:\study\manager-fe\server\routes\menus.js:11:35
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at allowedMethods (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:407:12)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at jwt (D:\study\manager-fe\server\node_modules\koa-jwt\lib\index.js:73:16)
+    at async D:\study\manager-fe\server\app.js:35:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-18T17:00:50.645] [ERROR] error - ReferenceError: cts is not defined
+    at D:\study\manager-fe\server\routes\menus.js:11:35
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at allowedMethods (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:407:12)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at jwt (D:\study\manager-fe\server\node_modules\koa-jwt\lib\index.js:73:16)
+    at async D:\study\manager-fe\server\app.js:35:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-18T17:00:59.578] [ERROR] error - ReferenceError: cts is not defined
+    at D:\study\manager-fe\server\routes\menus.js:11:35
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at allowedMethods (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:407:12)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at jwt (D:\study\manager-fe\server\node_modules\koa-jwt\lib\index.js:73:16)
+    at async D:\study\manager-fe\server\app.js:35:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-18T17:01:26.735] [ERROR] error - ReferenceError: cts is not defined
+    at D:\study\manager-fe\server\routes\menus.js:21:40
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at allowedMethods (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:407:12)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at jwt (D:\study\manager-fe\server\node_modules\koa-jwt\lib\index.js:73:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\study\manager-fe\server\app.js:35:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-18T17:01:29.015] [ERROR] error - ReferenceError: cts is not defined
+    at D:\study\manager-fe\server\routes\menus.js:21:40
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at allowedMethods (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:407:12)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at jwt (D:\study\manager-fe\server\node_modules\koa-jwt\lib\index.js:73:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\study\manager-fe\server\app.js:35:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-18T17:01:29.268] [ERROR] error - ReferenceError: cts is not defined
+    at D:\study\manager-fe\server\routes\menus.js:21:40
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at allowedMethods (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:407:12)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at jwt (D:\study\manager-fe\server\node_modules\koa-jwt\lib\index.js:73:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\study\manager-fe\server\app.js:35:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-18T17:01:29.548] [ERROR] error - ReferenceError: cts is not defined
+    at D:\study\manager-fe\server\routes\menus.js:21:40
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at allowedMethods (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:407:12)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at jwt (D:\study\manager-fe\server\node_modules\koa-jwt\lib\index.js:73:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\study\manager-fe\server\app.js:35:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-18T17:01:35.835] [ERROR] error - ReferenceError: cts is not defined
+    at D:\study\manager-fe\server\routes\menus.js:21:40
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at allowedMethods (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:407:12)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at jwt (D:\study\manager-fe\server\node_modules\koa-jwt\lib\index.js:73:16)
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\study\manager-fe\server\app.js:35:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-18T18:11:32.140] [ERROR] error - RangeError: Maximum call stack size exceeded
+    at _pathToPositionalSyntax (D:\study\manager-fe\server\node_modules\mongoose\lib\schema.js:846:16)
+    at Schema.path (D:\study\manager-fe\server\node_modules\mongoose\lib\schema.js:623:21)
+    at model.Document.$__path (D:\study\manager-fe\server\node_modules\mongoose\lib\document.js:1682:25)
+    at model.Document.get (D:\study\manager-fe\server\node_modules\mongoose\lib\document.js:1607:21)
+    at model.get [as parentId] (D:\study\manager-fe\server\node_modules\mongoose\lib\helpers\document\compile.js:176:32)
+    at D:\study\manager-fe\server\routes\menus.js:38:36
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:19)
+    at D:\study\manager-fe\server\routes\menus.js:39:21
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:21
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:21
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:21
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:21
+    at Array.forEach (<anonymous>)
+[2021-08-18T18:11:32.170] [ERROR] error - RangeError: Maximum call stack size exceeded
+    at _pathToPositionalSyntax (D:\study\manager-fe\server\node_modules\mongoose\lib\schema.js:846:16)
+    at Schema.path (D:\study\manager-fe\server\node_modules\mongoose\lib\schema.js:623:21)
+    at model.Document.$__path (D:\study\manager-fe\server\node_modules\mongoose\lib\document.js:1682:25)
+    at model.Document.get (D:\study\manager-fe\server\node_modules\mongoose\lib\document.js:1607:21)
+    at model.get [as parentId] (D:\study\manager-fe\server\node_modules\mongoose\lib\helpers\document\compile.js:176:32)
+    at D:\study\manager-fe\server\routes\menus.js:38:36
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:19)
+    at D:\study\manager-fe\server\routes\menus.js:39:21
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:21
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:21
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:21
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:21
+    at Array.forEach (<anonymous>)
+[2021-08-18T18:13:02.587] [ERROR] error - RangeError: Maximum call stack size exceeded
+    at _pathToPositionalSyntax (D:\study\manager-fe\server\node_modules\mongoose\lib\schema.js:846:16)
+    at Schema.path (D:\study\manager-fe\server\node_modules\mongoose\lib\schema.js:623:21)
+    at model.Document.$__path (D:\study\manager-fe\server\node_modules\mongoose\lib\document.js:1682:25)
+    at model.Document.get (D:\study\manager-fe\server\node_modules\mongoose\lib\document.js:1607:21)
+    at model.get [as parentId] (D:\study\manager-fe\server\node_modules\mongoose\lib\helpers\document\compile.js:176:32)
+    at D:\study\manager-fe\server\routes\menus.js:38:36
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:19)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+[2021-08-18T18:13:02.614] [ERROR] error - RangeError: Maximum call stack size exceeded
+    at _pathToPositionalSyntax (D:\study\manager-fe\server\node_modules\mongoose\lib\schema.js:846:16)
+    at Schema.path (D:\study\manager-fe\server\node_modules\mongoose\lib\schema.js:623:21)
+    at model.Document.$__path (D:\study\manager-fe\server\node_modules\mongoose\lib\document.js:1682:25)
+    at model.Document.get (D:\study\manager-fe\server\node_modules\mongoose\lib\document.js:1607:21)
+    at model.get [as parentId] (D:\study\manager-fe\server\node_modules\mongoose\lib\helpers\document\compile.js:176:32)
+    at D:\study\manager-fe\server\routes\menus.js:38:36
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:19)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+[2021-08-18T18:13:16.085] [ERROR] error - RangeError: Maximum call stack size exceeded
+    at _pathToPositionalSyntax (D:\study\manager-fe\server\node_modules\mongoose\lib\schema.js:846:16)
+    at Schema.path (D:\study\manager-fe\server\node_modules\mongoose\lib\schema.js:623:21)
+    at model.Document.$__path (D:\study\manager-fe\server\node_modules\mongoose\lib\document.js:1682:25)
+    at model.Document.get (D:\study\manager-fe\server\node_modules\mongoose\lib\document.js:1607:21)
+    at model.get [as parentId] (D:\study\manager-fe\server\node_modules\mongoose\lib\helpers\document\compile.js:176:32)
+    at D:\study\manager-fe\server\routes\menus.js:38:36
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:19)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+[2021-08-18T18:13:16.111] [ERROR] error - RangeError: Maximum call stack size exceeded
+    at _pathToPositionalSyntax (D:\study\manager-fe\server\node_modules\mongoose\lib\schema.js:846:16)
+    at Schema.path (D:\study\manager-fe\server\node_modules\mongoose\lib\schema.js:623:21)
+    at model.Document.$__path (D:\study\manager-fe\server\node_modules\mongoose\lib\document.js:1682:25)
+    at model.Document.get (D:\study\manager-fe\server\node_modules\mongoose\lib\document.js:1607:21)
+    at model.get [as parentId] (D:\study\manager-fe\server\node_modules\mongoose\lib\helpers\document\compile.js:176:32)
+    at D:\study\manager-fe\server\routes\menus.js:38:36
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:19)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)

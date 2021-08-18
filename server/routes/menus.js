@@ -1,112 +1,72 @@
 /**
- * 用户管理模块
+ * 菜单管理模块
  */
 const router = require('koa-router')()
-const md5 = require('md5')
 const util = require('../utils/util')
 const Menu = require('./../models/menuSchema')
-const Counter = require('./../models/counterSchema')
 router.prefix('/menu')
 
+// 菜单列表
 router.get('/list', async (ctx) => {
-  try {
-    // 接收参数
-    const { userId, userName, state } = ctx.request.query
-    const { page, skipIndex } = util.pager(ctx.request.query)
-    let params = {}
-    if (userId) params.userId = userId
-    if (userName) params.userName = userName
-    if (state && state != '0') params.state = state
-    // 根据条件查询数据库所有的用户，排除"_id", "userPwd"这两个字段
-    const query = User.find(params, { _id: 0, userPwd: 0 })
-    const list = await query.skip(skipIndex).limit(page.pageSize)
-    // 获取总条数
-    // 方法1：
-    // const total = list.length
-    // 方法2：
-    const total = await User.countDocuments(params)
-    ctx.body = util.success({
-      page: {
-        ...page,
-        total
-      },
-      list
-    })
-  } catch (error) {
-    ctx.body = util.fail(`${error.stack}`)
-  }
+  const { menuName, menuState } = ctx.request.query
+  let params = {}
+  if(menuName) params.menuName = menuName
+  if(menuState) params.menuState = menuState
+  let rootList = await Menu.find(params) || []
+  // const list = getTreeMenu(rootList, null, [])
+  const list = getTreeMenu1(rootList, null)
+  ctx.body = util.success(list)
 })
 
-// 用户批量(单个)删除
-router.post('/delete', async (ctx) => {
-  try {
-    // 接收参数
-    const { userIds } = ctx.request.body
-    // 两种方式都可以更新数据
-    // User.updateMany({$or: [{userId: ''}, {userId: ''}]}, {state: 2})
-    const res = await User.updateMany({userId: { $in: userIds }}, {state: 2})
-    if(res.nModified) {
-      ctx.body = util.success(res, `共删除成功${res.nModified}条`)
-      return
+// 组装菜单结构----1
+function getTreeMenu(rootList, id, list) {
+  for(let i = 0; i < rootList.length; i++) {
+    let item = rootList[i]
+    if(item.parentId.includes(id)) {
+      list.push(item)
     }
-    ctx.body = util.fail('删除失败')
-  } catch (error) {
-    ctx.body = util.fail(`${error.stack}`)
   }
-})
+  list.map(item => {
+    item.children = []
+    getTreeMenu(rootList, item._id, item.children)
+  })
+  return list
+}
 
-// 用户创建和编辑
+// 组装菜单结构----2
+function getTreeMenu1(rootList, id) {
+  return rootList.map(item => item.parentId.includes(id)).forEach(list => {
+    let child = getTreeMenu1(rootList, list._id)
+    if(child && child.length) {
+      list.children = child
+    }
+  })
+}
+
+// 菜单创建/编辑/删除
 router.post('/operate', async (ctx) => {
-    // 接收参数
-    const { userId, userName, userEmail, mobile, job, state, roleList, deptId, action } = ctx.request.body
-    if(action === 'add') {
-      if(!userName || !userEmail || !deptId) {
-        ctx.body = util.fail('参数错误', util.CODE.PARAM_ERROR)
-        return
+    const { _id, action, ...params } = ctx.request.body
+    let res, info
+    try {
+      if(action === 'add') {
+        // 新增有两种方式 1. Menu.create({....}) 2. new Menu({....}).save()
+        res = await Menu.create(params)
+        info = '创建成功'
+      } else if(action === 'edit'){
+        // delete params._id
+        // delete params.action
+        params.updateTime = new Date()
+        res = await Menu.findOneAndUpdate(_id, params)
+        info = '编辑成功'
+      }else{
+        res = await Menu.findByIdAndRemove(_id)
+        // 包含语法(parentId中包含_id的都删除) 找出关联元素全部删除
+        await Menu.deleteMany({ parentId: { $all: [_id] } })
+        info = '删除成功'
       }
-      const res = await User.findOne({$or: [{userName}, {userEmail}]}, '_id userName userEmail')
-      if(res) {
-        ctx.body = util.fail(`系统检测到有重复用户, 信息如下：${res.userName} - ${res.userEmail}`)
-      } else {
-        try {
-          const doc = await Counter.findOneAndUpdate({_id: 'userId'}, {$inc: {sequence_value: 1}}, {new: true})
-          console.log('doc=>', doc)
-          const user = new User({
-            userId: doc.sequence_value,
-            userName,
-            userEmail,
-            roleList,
-            userPwd: md5('123456'),
-            mobile,
-            job,
-            state,
-            userEmail,
-            deptId,
-            role: 1 // 默认普通用户
-          })
-          user.save()
-          ctx.body = util.success('', '添加成功')
-        } catch (error) {
-          ctx.body = util.fail(`${error.stack}`)
-        }
-      }
-    } else {
-      if(!deptId) {
-        ctx.body = util.fail('部门不能为空', util.CODE.PARAM_ERROR)
-        return
-      }
-      try {
-        // 设置new： true 返回更新后的文档，设置flase再返回旧文档
-        const res = await User.findOneAndUpdate({ userId }, { mobile, job, state, roleList, deptId }, {new: true})
-        // console.log('res=>', res) 返回修改后的数据=> {......}    没有查找到 => null
-        if(res) {
-          ctx.body = util.success({}, '更新成功')
-          return
-        }
-        ctx.body = util.fail('更新失败')
-      } catch (error) {
-        ctx.body = util.fail(`${error.stack}`)
-      }
+      ctx.body = util.success('', info)
+    } catch (error) {
+      ctx.body = util.fail(`${error.stack}`)
     }
 })
 

@@ -9,8 +9,8 @@ export default {
   noticeCount() {
     return request({ url: '/leave/count', method: 'get', mock: true })
   },
-  getMenuList() {
-    return request({ url: '/menu/list', method: 'get', mock: true })
+  getMenuList(params) {
+    return request({ url: '/menu/list', method: 'get', data: params, mock: false })
   },
   getUserList(params) {
     return request({ url: '/users/list', method: 'get', data: params, mock: false })
@@ -28,6 +28,6 @@ export default {
     return request({ url: '/users/operate', method: 'post', data: params, mock: false })
   },
   menuSubmit(params) {
-    return request({ url: '/menu/operate', method: 'post', data: params, mock: true })
+    return request({ url: '/menu/operate', method: 'post', data: params, mock: false })
   },
 }
