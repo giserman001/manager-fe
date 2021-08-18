@@ -907,3 +907,90 @@
 [2021-08-18T18:13:16.038] [INFO] info - post params:{}
 [2021-08-18T18:16:20.414] [INFO] info - ****数据库连接成功****
 [2021-08-18T18:17:57.301] [INFO] info - ****数据库连接成功****
+[2021-08-18T21:10:29.942] [INFO] info - ****数据库连接成功****
+[2021-08-18T21:10:45.114] [INFO] info - get params:{}
+[2021-08-18T21:10:45.115] [INFO] info - post params:{}
+[2021-08-18T21:11:55.308] [INFO] info - get params:{}
+[2021-08-18T21:11:55.310] [INFO] info - post params:{}
+[2021-08-18T21:11:58.399] [INFO] info - get params:{}
+[2021-08-18T21:11:58.399] [INFO] info - post params:{"userName":"admin","userPwd":"e10adc3949ba59abbe56e057f20f883e"}
+[2021-08-18T21:11:58.438] [INFO] info - get params:{}
+[2021-08-18T21:11:58.439] [INFO] info - post params:{}
+[2021-08-18T21:12:06.581] [INFO] info - get params:{"menuState":"1"}
+[2021-08-18T21:12:06.581] [INFO] info - post params:{}
+[2021-08-18T21:12:23.486] [INFO] info - get params:{"menuState":"1"}
+[2021-08-18T21:12:23.486] [INFO] info - post params:{}
+[2021-08-18T21:12:23.489] [INFO] info - get params:{}
+[2021-08-18T21:12:23.489] [INFO] info - post params:{}
+[2021-08-18T21:13:26.008] [INFO] info - get params:{"menuState":"1"}
+[2021-08-18T21:13:26.008] [INFO] info - post params:{}
+[2021-08-18T21:13:26.011] [INFO] info - get params:{}
+[2021-08-18T21:13:26.013] [INFO] info - post params:{}
+[2021-08-18T21:21:32.010] [INFO] info - ****数据库连接成功****
+[2021-08-18T21:23:28.224] [INFO] info - ****数据库连接成功****
+[2021-08-18T21:35:09.932] [INFO] info - ****数据库连接成功****
+[2021-08-18T21:44:55.956] [INFO] info - ****数据库连接成功****
+[2021-08-18T21:45:06.470] [INFO] info - get params:{"menuState":"1"}
+[2021-08-18T21:45:06.470] [INFO] info - post params:{}
+[2021-08-18T21:45:06.485] [INFO] info - get params:{}
+[2021-08-18T21:45:06.485] [INFO] info - post params:{}
+[2021-08-18T21:45:14.421] [INFO] info - get params:{}
+[2021-08-18T21:45:14.422] [INFO] info - post params:{}
+[2021-08-18T21:45:14.431] [INFO] info - get params:{"menuState":"1"}
+[2021-08-18T21:45:14.432] [INFO] info - post params:{}
+[2021-08-18T21:47:19.802] [INFO] info - get params:{"menuState":"1"}
+[2021-08-18T21:47:36.301] [INFO] info - post params:{}
+[2021-08-18T21:47:36.304] [INFO] info - get params:{}
+[2021-08-18T21:47:36.304] [INFO] info - post params:{}
+[2021-08-18T21:47:36.363] [INFO] info - get params:{"menuState":"1"}
+[2021-08-18T21:47:36.363] [INFO] info - post params:{}
+[2021-08-18T21:47:36.365] [INFO] info - get params:{}
+[2021-08-18T21:47:36.366] [INFO] info - post params:{}
+[2021-08-18T21:47:36.368] [INFO] info - get params:{"menuState":"1"}
+[2021-08-18T21:47:36.375] [INFO] info - post params:{}
+[2021-08-18T21:47:36.379] [INFO] info - get params:{}
+[2021-08-18T21:47:36.380] [INFO] info - post params:{}
+[2021-08-18T21:47:37.613] [INFO] info - ****数据库连接成功****
+[2021-08-18T21:47:52.311] [INFO] info - get params:{"userId":"","userName":"","state":"1","pageNum":"1","pageSize":"10","total":"0"}
+[2021-08-18T21:47:52.312] [INFO] info - post params:{}
+[2021-08-18T21:47:55.995] [INFO] info - get params:{"menuState":"1"}
+[2021-08-18T21:47:55.996] [INFO] info - post params:{}
+[2021-08-18T21:50:11.229] [INFO] info - ****数据库连接成功****
+[2021-08-18T21:50:30.533] [INFO] info - ****数据库连接成功****
+[2021-08-18T21:51:37.590] [INFO] info - ****数据库连接成功****
+[2021-08-18T21:53:49.529] [INFO] info - ****数据库连接成功****
+[2021-08-18T21:53:57.176] [INFO] info - get params:{"menuState":"1"}
+[2021-08-18T21:53:57.177] [INFO] info - post params:{}
+[2021-08-18T21:53:57.192] [INFO] info - get params:{}
+[2021-08-18T21:53:57.194] [INFO] info - post params:{}
+[2021-08-18T21:58:32.081] [INFO] info - ****数据库连接成功****
+[2021-08-18T22:00:35.343] [INFO] info - ****数据库连接成功****
+[2021-08-18T22:03:08.480] [INFO] info - ****数据库连接成功****
+[2021-08-18T22:03:11.680] [INFO] info - get params:{"menuState":"1"}
+[2021-08-18T22:03:11.680] [INFO] info - post params:{}
+[2021-08-18T22:03:11.700] [INFO] info - get params:{}
+[2021-08-18T22:03:11.700] [INFO] info - post params:{}
+[2021-08-18T22:09:36.295] [INFO] info - get params:{"menuState":"1"}
+[2021-08-18T22:09:36.296] [INFO] info - post params:{}
+[2021-08-18T22:09:36.311] [INFO] info - get params:{}
+[2021-08-18T22:09:36.311] [INFO] info - post params:{}
+[2021-08-18T22:10:51.537] [INFO] info - ****数据库连接成功****
+[2021-08-18T22:11:07.476] [INFO] info - ****数据库连接成功****
+[2021-08-18T22:11:36.677] [INFO] info - ****数据库连接成功****
+[2021-08-18T22:12:13.827] [INFO] info - get params:{}
+[2021-08-18T22:12:13.828] [INFO] info - post params:{"parentId":["611cd0895bfdb1fdf468258c","611cd0b05bfdb1fdf468258f"],"menuType":"2","menuState":"1","menuName":"查看","menuCode":"query-user","action":"add"}
+[2021-08-18T22:12:16.513] [INFO] info - get params:{}
+[2021-08-18T22:12:16.513] [INFO] info - post params:{"userName":"admin","userPwd":"e10adc3949ba59abbe56e057f20f883e"}
+[2021-08-18T22:12:16.900] [INFO] info - get params:{}
+[2021-08-18T22:12:16.900] [INFO] info - post params:{}
+[2021-08-18T22:12:23.565] [INFO] info - get params:{"menuState":"1"}
+[2021-08-18T22:12:23.565] [INFO] info - post params:{}
+[2021-08-18T22:12:43.265] [INFO] info - get params:{}
+[2021-08-18T22:12:43.265] [INFO] info - post params:{"parentId":["611cd0895bfdb1fdf468258c","611cd0b05bfdb1fdf468258f"],"menuType":"2","menuState":"1","menuName":"查看","menuCode":"query-user","action":"add"}
+[2021-08-18T22:12:43.616] [INFO] info - get params:{"menuState":"1"}
+[2021-08-18T22:12:43.616] [INFO] info - post params:{}
+[2021-08-18T22:13:00.158] [INFO] info - get params:{"menuState":"1"}
+[2021-08-18T22:13:00.158] [INFO] info - post params:{}
+[2021-08-18T22:13:00.171] [INFO] info - get params:{}
+[2021-08-18T22:13:00.172] [INFO] info - post params:{}
+[2021-08-18T22:18:30.244] [INFO] info - ****数据库连接成功****

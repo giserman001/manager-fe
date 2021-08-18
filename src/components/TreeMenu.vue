@@ -8,9 +8,8 @@
             <tree-menu :userMenu="menu.children" />
         </el-submenu>
         <el-menu-item v-else-if="menu.menuType == 1" :index="menu.path" :key="menu._id">
-            <!-- <i class="el-icon-menu"></i>
-            <template #title>导航二</template> -->
-            {{menu.menuName}}
+            <i :class="menu.icon"></i>
+            <template #title>{{menu.menuName}}</template>
         </el-menu-item>
     </template>
 </template>

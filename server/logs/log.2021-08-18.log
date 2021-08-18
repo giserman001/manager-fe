@@ -312,3 +312,49 @@
     at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
     at D:\study\manager-fe\server\routes\menus.js:39:17
     at Array.forEach (<anonymous>)
+[2021-08-18T21:13:26.054] [ERROR] error - RangeError: Maximum call stack size exceeded
+    at D:\study\manager-fe\server\routes\menus.js:38:45
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:19)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+[2021-08-18T21:13:26.089] [ERROR] error - RangeError: Maximum call stack size exceeded
+    at _pathToPositionalSyntax (D:\study\manager-fe\server\node_modules\mongoose\lib\schema.js:846:16)
+    at Schema.path (D:\study\manager-fe\server\node_modules\mongoose\lib\schema.js:623:21)
+    at model.Document.$__path (D:\study\manager-fe\server\node_modules\mongoose\lib\document.js:1682:25)
+    at model.Document.get (D:\study\manager-fe\server\node_modules\mongoose\lib\document.js:1607:21)
+    at model.get [as parentId] (D:\study\manager-fe\server\node_modules\mongoose\lib\helpers\document\compile.js:176:32)
+    at D:\study\manager-fe\server\routes\menus.js:38:36
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:19)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:38:59)
+    at D:\study\manager-fe\server\routes\menus.js:39:17
+    at Array.forEach (<anonymous>)
