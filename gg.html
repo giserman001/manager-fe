@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0"
+    />
+    <title></title>
+  </head>
+
+  <body>
+    <script>
+      const arr = [
+        {
+          a: true,
+          child: [
+            {
+              a: true,
+              b: 2,
+            },
+            {
+              a: false,
+              b: 3,
+            },
+          ],
+        },
+        {
+          a: true,
+          child: [
+            {
+              a: true,
+              b: 2,
+              child: [
+                {
+                  a: true,
+                  b: 4,
+                },
+                {
+                  a: false,
+                  b: 4,
+                },
+              ],
+            },
+            {
+              a: true,
+              b: 3,
+            },
+          ],
+        },
+        {
+          a: false,
+          child: [
+            {
+              a: false,
+              b: 2,
+            },
+            {
+              a: false,
+              b: 3,
+            },
+          ],
+        },
+      ]
+
+      const filterMenu = (menuList) => {
+        return menuList
+          .filter((item) => {
+            return item.a == true
+          })
+          .map((item) => {
+            item = Object.assign({}, item)
+            if (item.child && item.child.length > 0) {
+              item.child = filterMenu(item.child)
+            }
+            return item
+          })
+      }
+      // 调用
+      let menuList = filterMenu(arr)
+      console.log(menuList, 'menuList')
+    </script>
+  </body>
+</html>
