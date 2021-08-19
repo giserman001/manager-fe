@@ -1,0 +1,150 @@
+[2021-08-19T13:57:49.163] [ERROR] error - RangeError: Maximum call stack size exceeded
+    at model.Document.get (D:\study\manager-fe\server\node_modules\mongoose\lib\document.js:1600:34)
+    at model.get [as parentId] (D:\study\manager-fe\server\node_modules\mongoose\lib\helpers\document\compile.js:176:32)
+    at D:\study\manager-fe\server\routes\menus.js:47:39
+    at Array.filter (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:19)
+    at D:\study\manager-fe\server\routes\menus.js:49:17
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:63)
+    at D:\study\manager-fe\server\routes\menus.js:49:17
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:63)
+    at D:\study\manager-fe\server\routes\menus.js:49:17
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:63)
+    at D:\study\manager-fe\server\routes\menus.js:49:17
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:63)
+    at D:\study\manager-fe\server\routes\menus.js:49:17
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:63)
+    at D:\study\manager-fe\server\routes\menus.js:49:17
+    at Array.map (<anonymous>)
+[2021-08-19T13:57:49.202] [ERROR] error - RangeError: Maximum call stack size exceeded
+    at model.Document.get (D:\study\manager-fe\server\node_modules\mongoose\lib\document.js:1600:34)
+    at model.get [as parentId] (D:\study\manager-fe\server\node_modules\mongoose\lib\helpers\document\compile.js:176:32)
+    at D:\study\manager-fe\server\routes\menus.js:47:39
+    at Array.filter (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:19)
+    at D:\study\manager-fe\server\routes\menus.js:49:17
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:63)
+    at D:\study\manager-fe\server\routes\menus.js:49:17
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:63)
+    at D:\study\manager-fe\server\routes\menus.js:49:17
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:63)
+    at D:\study\manager-fe\server\routes\menus.js:49:17
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:63)
+    at D:\study\manager-fe\server\routes\menus.js:49:17
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:63)
+    at D:\study\manager-fe\server\routes\menus.js:49:17
+    at Array.map (<anonymous>)
+[2021-08-19T14:05:33.565] [ERROR] error - ReferenceError: id is not defined
+    at D:\study\manager-fe\server\routes\menus.js:47:80
+    at Array.filter (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:19)
+    at D:\study\manager-fe\server\routes\menus.js:17:16
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\study\manager-fe\server\app.js:35:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-19T14:05:33.575] [ERROR] error - ReferenceError: id is not defined
+    at D:\study\manager-fe\server\routes\menus.js:47:80
+    at Array.filter (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:19)
+    at D:\study\manager-fe\server\routes\menus.js:17:16
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\study\manager-fe\server\app.js:35:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-19T14:09:42.436] [ERROR] error - TypeError: Cannot read property 'filter' of undefined
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:19)
+    at D:\study\manager-fe\server\routes\menus.js:17:16
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\study\manager-fe\server\app.js:35:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-19T14:09:42.445] [ERROR] error - TypeError: Cannot read property 'filter' of undefined
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:19)
+    at D:\study\manager-fe\server\routes\menus.js:17:16
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\study\manager-fe\server\app.js:35:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-19T15:11:48.238] [ERROR] error - ReferenceError: id is not defined
+    at D:\study\manager-fe\server\routes\menus.js:47:80
+    at Array.filter (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:19)
+    at D:\study\manager-fe\server\routes\menus.js:17:16
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\study\manager-fe\server\app.js:35:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-19T15:11:48.249] [ERROR] error - ReferenceError: id is not defined
+    at D:\study\manager-fe\server\routes\menus.js:47:80
+    at Array.filter (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:19)
+    at D:\study\manager-fe\server\routes\menus.js:17:16
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\study\manager-fe\server\app.js:35:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-19T15:19:10.602] [ERROR] error - TypeError: Cannot read property '0' of undefined
+    at D:\study\manager-fe\server\routes\menus.js:53:21
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:86)
+    at D:\study\manager-fe\server\routes\menus.js:49:17
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:86)
+    at D:\study\manager-fe\server\routes\menus.js:49:17
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:86)
+    at D:\study\manager-fe\server\routes\menus.js:17:16
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\study\manager-fe\server\app.js:35:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-19T15:19:10.615] [ERROR] error - TypeError: Cannot read property '0' of undefined
+    at D:\study\manager-fe\server\routes\menus.js:53:21
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:86)
+    at D:\study\manager-fe\server\routes\menus.js:49:17
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:86)
+    at D:\study\manager-fe\server\routes\menus.js:49:17
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:86)
+    at D:\study\manager-fe\server\routes\menus.js:17:16
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\study\manager-fe\server\app.js:35:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-19T15:19:38.081] [ERROR] error - ReferenceError: item is not defined
+    at D:\study\manager-fe\server\routes\menus.js:54:21
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:86)
+    at D:\study\manager-fe\server\routes\menus.js:49:17
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:86)
+    at D:\study\manager-fe\server\routes\menus.js:17:16
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\study\manager-fe\server\app.js:35:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
+[2021-08-19T15:19:38.091] [ERROR] error - ReferenceError: item is not defined
+    at D:\study\manager-fe\server\routes\menus.js:54:21
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:86)
+    at D:\study\manager-fe\server\routes\menus.js:49:17
+    at Array.map (<anonymous>)
+    at getTreeMenu1 (D:\study\manager-fe\server\routes\menus.js:47:86)
+    at D:\study\manager-fe\server\routes\menus.js:17:16
+    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+    at async D:\study\manager-fe\server\app.js:35:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)

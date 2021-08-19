@@ -30,4 +30,13 @@ export default {
   menuSubmit(params) {
     return request({ url: '/menu/operate', method: 'post', data: params, mock: false })
   },
+  getRoleList(params) {
+    return request({ url: '/roles/list', method: 'get', data: params, mock: true })
+  },
+  roleSubmit(params) {
+    return request({ url: '/roles/operate', method: 'post', data: params, mock: true })
+  },
+  setRolePermission(params) {
+    return request({ url: '/roles/update/permission', method: 'post', data: params, mock: true })
+  },
 }

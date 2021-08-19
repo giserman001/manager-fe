@@ -13,8 +13,8 @@ router.get('/list', async (ctx) => {
   if(menuName) params.menuName = menuName
   if(menuState) params.menuState = menuState
   let rootList = await Menu.find(params) || []
-  const list = getTreeMenu(rootList, null, [])
-  // const list = getTreeMenu1(rootList, null)
+  // const list = getTreeMenu(rootList, null, [])
+  const list = getTreeMenu1(rootList, null)
   ctx.body = util.success(list)
 })
 
@@ -44,11 +44,16 @@ function getTreeMenu(rootList, id, list) {
 
 // 组装菜单结构----2
 function getTreeMenu1(rootList, _id) {
-  return rootList.map(item => item.parentId.includes(_id)).forEach(list => {
+  return rootList.filter(item => String(item.parentId.slice().pop()) == String(_id)).map(list => {
+    list = Object.assign({}, list._doc)
     let child = getTreeMenu1(rootList, list._id)
     if(child && child.length) {
       list.children = child
     }
+    if(list.children && list.children[0].menuType == 2) {
+      list.action = list.children
+    }
+    return list
   })
 }
 

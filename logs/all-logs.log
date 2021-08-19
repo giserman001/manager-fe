@@ -5,3 +5,7 @@
 [2021-08-18T21:41:07.020] [INFO] info - post params:{}
 [2021-08-18T21:41:47.766] [INFO] info - get params:{"menuState":"1"}
 [2021-08-18T21:41:47.767] [INFO] info - post params:{}
+[2021-08-19T14:01:37.494] [INFO] info - ****数据库连接成功****
+[2021-08-19T14:02:09.442] [INFO] info - get params:{"menuState":"1"}
+[2021-08-19T14:02:09.444] [INFO] info - post params:{}
+[2021-08-19T14:02:09.465] [INFO] info - get params:{}
