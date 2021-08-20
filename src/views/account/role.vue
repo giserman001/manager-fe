@@ -36,7 +36,7 @@
       <el-pagination
         class="pagination"
         background
-        layout="prev, pager, next"
+        layout="total, prev, pager, next"
         :total="pages.total"
         :page-size="pages.pageSize"
         @current-change="handleCurrentChange"
@@ -100,7 +100,11 @@ export default {
         prop: 'roleName',
       }, {
         label: '权限列表',
-        prop: 'icon'
+        prop: 'permissionList',
+        formatter:(row, column, value) => {
+          let list = value.halfCheckedKeys || []
+          return list.map(key => this.actionMap[key]).filter(item => item).join(', ')
+        }
       }, {
         label: '创建时间',
         prop: 'createTime',
@@ -121,7 +125,9 @@ export default {
       action: 'create',
       showPermission: false,
       curRoleId: '',
-      curRoleName: ''
+      curRoleName: '',
+      // 菜单映射表
+      actionMap: {}
     }
   },
   mounted() {
@@ -133,6 +139,23 @@ export default {
     async getMenuList() {
       const list = await this.$api.getMenuList()
       this.menuList = list
+      this.getActionMap(JSON.parse(JSON.stringify(list)))
+    },
+    getActionMap(list) {
+      let actionMap = {}
+      const deep = (arr) => {
+        while(arr.length) {
+          let item = arr.pop()
+          if(item.children && item.action) {
+            actionMap[item._id] = item.menuName
+          }
+          if(item.children && !item.action) {
+            deep(item.children)
+          }
+        }
+      }
+      deep(list)
+      this.actionMap = actionMap
     },
     // 角色列表
     async getRoleList() {
@@ -158,6 +181,7 @@ export default {
       this.$nextTick(() => {
         this.roleForm = {
           ...this.roleForm,
+          _id: row._id,
           roleName: row.roleName,
           remark: row.remark
         }

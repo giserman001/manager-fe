@@ -13,6 +13,7 @@ const utils = require('./utils/util')
 // 路由
 const users = require('./routes/users')
 const menus = require('./routes/menus')
+const roles = require('./routes/roles')
 
 // error handler
 onerror(app)
@@ -47,10 +48,13 @@ app.use(koajwt({secret: 'imooc'}).unless({
   path: ['/api/users/login']
 }))
 // routes
-// 挂载一级路由
+// 定义一级路由
 router.prefix('/api')
+// 业务所有路由
 router.use(users.routes(), users.allowedMethods())
 router.use(menus.routes(), menus.allowedMethods())
+router.use(roles.routes(), roles.allowedMethods())
+// 挂载所有路由
 app.use(router.routes(), router.allowedMethods())
 
 // error-handling

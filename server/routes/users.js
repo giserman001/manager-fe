@@ -25,7 +25,7 @@ router.post('/login', async (ctx) => {
     const res = await User.findOne({ userName, userPwd }, 'userId userName userEmail state role deptId roleList')
     if (res) {
       const data = res._doc
-      const token = jwt.sign({ data }, 'imooc', { expiresIn: '1h' })
+      const token = jwt.sign({ data }, 'imooc', { expiresIn: '1d' })
       ctx.body = util.success({ ...data, token })
     } else {
       ctx.body = util.fail('账号或密码不正确')
