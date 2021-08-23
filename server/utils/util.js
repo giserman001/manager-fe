@@ -1,6 +1,7 @@
 /**
  * 通用工具函数
  */
+const jwt = require('jsonwebtoken')
 const log4js = require('../utils/log4j')
 const CODE = {
   SUCCESS: 200,
@@ -38,5 +39,25 @@ module.exports = {
     log4js.debug(msg)
     return { code, data, msg }
   },
-  CODE
+  CODE,
+  decoded(authorization) {
+    if(authorization) {
+      const token = authorization.split(' ')[1]
+      return jwt.verify(token, 'imooc')
+    }
+    return ''
+  },
+  getTreeMenu(rootList, _id) {
+    return rootList.filter(item => String(item.parentId.slice().pop()) == String(_id)).map(list => {
+      list = Object.assign({}, list._doc)
+      let child = this.getTreeMenu(rootList, list._id)
+      if(child && child.length) {
+        list.children = child
+      }
+      if(list.children && list.children[0].menuType == 2) {
+        list.action = list.children
+      }
+      return list
+    })
+  }
 }

@@ -133,7 +133,9 @@ export default {
       ],
       action: '',
       showModal: false,
-      deptForm: {},
+      deptForm: {
+        parentId: [null]
+      },
       rules: {
         parentId: [
           { required: true, message: '请选择上级部门', trigger: 'blur' },
@@ -154,9 +156,10 @@ export default {
     // 获取用户列表
     async getUserList() {
       const list = await this.$api.getUserAllList()
+      console.log(list)
       this.userList = list
     },
-    // 角色列表
+    // 部门列表
     async getDeptList() {
       this.deptList = await this.$api.getAllDept(this.queryForm)
     },
@@ -179,6 +182,7 @@ export default {
             await this.$api.deptSubmit(params)
             this.$message.success('操作成功')
             this.handleReset('dialogForm')
+            this.showModal = false
           } catch (error) {
             throw new Error(error)
           }

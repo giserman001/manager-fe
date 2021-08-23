@@ -12,21 +12,21 @@ export default {
   getMenuList(params) {
     return request({ url: '/menu/list', method: 'get', data: params, mock: false })
   },
+  getPermissionList() {
+    return request({ url: '/users/getPermissionList', method: 'get', mock: false })
+  },
   getUserList(params) {
     return request({ url: '/users/list', method: 'get', data: params, mock: false })
   },
   // 获取所有用户列表
   getUserAllList() {
-    return request({ url: '/users/all/list', method: 'get', mock: true })
+    return request({ url: '/users/all/list', method: 'get', mock: false })
   },
   delUsers(params) {
     return request({ url: '/users/delete', method: 'post', data: params, mock: false })
   },
   getAllRole(params) {
     return request({ url: '/roles/allList', method: 'get', data: params, mock: false })
-  },
-  getAllDept(params) {
-    return request({ url: '/dept/all/list', method: 'get', data: params, mock: true })
   },
   userSubmit(params) {
     return request({ url: '/users/operate', method: 'post', data: params, mock: false })
@@ -44,10 +44,10 @@ export default {
     return request({ url: '/roles/update/permission', method: 'post', data: params, mock: false })
   },
   // 获取部门列表
-  getDeptList(params) {
-    return request({ url: '/dept/list', method: 'get', data: params, mock: true })
+  getAllDept(params) {
+    return request({ url: '/dept/list', method: 'get', data: params, mock: false })
   },
   deptSubmit(params) {
-    return request({ url: '/dept/operate', method: 'post', data: params, mock: true })
+    return request({ url: '/dept/operate', method: 'post', data: params, mock: false })
   },
 }

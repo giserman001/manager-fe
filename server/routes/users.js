@@ -9,6 +9,8 @@ router.prefix('/users')
 const util = require('../utils/util')
 const jwt = require('jsonwebtoken')
 const User = require('./../models/userSchema')
+const Menu = require('./../models/menuSchema')
+const Role = require('./../models/roleSchema')
 const Counter = require('./../models/counterSchema')
 
 // 登陆
@@ -35,7 +37,7 @@ router.post('/login', async (ctx) => {
   }
 })
 
-// 登陆
+// 用户列表(带有分页)
 router.get('/list', async (ctx) => {
   try {
     // 接收参数
@@ -65,6 +67,17 @@ router.get('/list', async (ctx) => {
   }
 })
 
+// 获取所有用户列表
+router.get('/all/list', async (ctx) => {
+  try {
+    // 查询所有没有离职的员工
+    const list = await User.find({ state: { $ne: 2 } }, '_id userName userId userEmail')
+    ctx.body = util.success(list)
+  } catch (error) {
+    ctx.body = util.fail(`${error.stack}`)
+  }
+})
+
 // 用户批量(单个)删除
 router.post('/delete', async (ctx) => {
   try {
@@ -72,8 +85,8 @@ router.post('/delete', async (ctx) => {
     const { userIds } = ctx.request.body
     // 两种方式都可以更新数据
     // User.updateMany({$or: [{userId: ''}, {userId: ''}]}, {state: 2})
-    const res = await User.updateMany({userId: { $in: userIds }}, {state: 2})
-    if(res.nModified) {
+    const res = await User.updateMany({ userId: { $in: userIds } }, { state: 2 })
+    if (res.nModified) {
       ctx.body = util.success(res, `共删除成功${res.nModified}条`)
       return
     }
@@ -85,58 +98,79 @@ router.post('/delete', async (ctx) => {
 
 // 用户创建和编辑
 router.post('/operate', async (ctx) => {
-    // 接收参数
-    const { userId, userName, userEmail, mobile, job, state, roleList, deptId, action } = ctx.request.body
-    if(action === 'add') {
-      if(!userName || !userEmail || !deptId) {
-        ctx.body = util.fail('参数错误', util.CODE.PARAM_ERROR)
-        return
-      }
-      
-      const res = await User.findOne({$or: [{userName}, {userEmail}]}, '_id userName userEmail')
-      if(res) {
-        ctx.body = util.fail(`系统检测到有重复用户, 信息如下：${res.userName} - ${res.userEmail}`)
-      } else {
-        try {
-          const doc = await Counter.findOneAndUpdate({_id: 'userId'}, {$inc: {sequence_value: 1}}, {new: true})
-          console.log('doc=>', doc)
-          const user = new User({
-            userId: doc.sequence_value,
-            userName,
-            userEmail,
-            roleList,
-            userPwd: md5('123456'),
-            mobile,
-            job,
-            state,
-            userEmail,
-            deptId,
-            role: 1 // 默认普通用户
-          })
-          user.save()
-          ctx.body = util.success('', '添加成功')
-        } catch (error) {
-          ctx.body = util.fail(`${error.stack}`)
-        }
-      }
+  // 接收参数
+  const { userId, userName, userEmail, mobile, job, state, roleList, deptId, action } = ctx.request.body
+  if (action === 'add') {
+    if (!userName || !userEmail || !deptId) {
+      ctx.body = util.fail('参数错误', util.CODE.PARAM_ERROR)
+      return
+    }
+
+    const res = await User.findOne({ $or: [{ userName }, { userEmail }] }, '_id userName userEmail')
+    if (res) {
+      ctx.body = util.fail(`系统检测到有重复用户, 信息如下：${res.userName} - ${res.userEmail}`)
     } else {
-      if(!deptId) {
-        ctx.body = util.fail('部门不能为空', util.CODE.PARAM_ERROR)
-        return
-      }
       try {
-        // 设置new： true 返回更新后的文档，设置flase再返回旧文档
-        const res = await User.findOneAndUpdate({ userId }, { mobile, job, state, roleList, deptId }, {new: true})
-        // console.log('res=>', res) 返回修改后的数据=> {......}    没有查找到 => null
-        if(res) {
-          ctx.body = util.success({}, '更新成功')
-          return
-        }
-        ctx.body = util.fail('更新失败')
+        const doc = await Counter.findOneAndUpdate({ _id: 'userId' }, { $inc: { sequence_value: 1 } }, { new: true })
+        console.log('doc=>', doc)
+        const user = new User({
+          userId: doc.sequence_value,
+          userName,
+          userEmail,
+          roleList,
+          userPwd: md5('123456'),
+          mobile,
+          job,
+          state,
+          userEmail,
+          deptId,
+          role: 1 // 默认普通用户
+        })
+        user.save()
+        ctx.body = util.success('', '添加成功')
       } catch (error) {
         ctx.body = util.fail(`${error.stack}`)
       }
     }
+  } else {
+    if (!deptId) {
+      ctx.body = util.fail('部门不能为空', util.CODE.PARAM_ERROR)
+      return
+    }
+    try {
+      // 设置new： true 返回更新后的文档，设置flase再返回旧文档
+      const res = await User.findOneAndUpdate({ userId }, { mobile, job, state, roleList, deptId }, { new: true })
+      // console.log('res=>', res) 返回修改后的数据=> {......}    没有查找到 => null
+      if (res) {
+        ctx.body = util.success({}, '更新成功')
+        return
+      }
+      ctx.body = util.fail('更新失败')
+    } catch (error) {
+      ctx.body = util.fail(`${error.stack}`)
+    }
+  }
 })
 
+// 获取用户对应的权限菜单
+router.get('/getPermissionList', async (ctx) => {
+  let authorization = ctx.request.headers.authorization
+  // 解密token
+  const { data } = util.decoded(authorization)
+  console.log(data, 'token')
+  const menuList = await getMenuList(data.role, data.roleList)
+  ctx.body = util.success(menuList)
+})
+
+async function getMenuList(userRole, roleList) {
+  let rootList = []
+  if (userRole == 0) {
+    // 管理员
+    rootList = await Menu.find({}) || []
+  } else {
+    // 根据用户拥有的角色获取权限列表，先查找用户对用哪些角色，然后通过角色去查找权限
+    let roleList = await Role.find({ _id: { $in: [...roleList] } })
+  }
+  return util.getTreeMenu(rootList, null)
+}
 module.exports = router

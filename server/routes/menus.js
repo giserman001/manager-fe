@@ -14,7 +14,7 @@ router.get('/list', async (ctx) => {
   if(menuState) params.menuState = menuState
   let rootList = await Menu.find(params) || []
   // const list = getTreeMenu(rootList, null, [])
-  const list = getTreeMenu1(rootList, null)
+  const list = util.getTreeMenu(rootList, null)
   ctx.body = util.success(list)
 })
 
