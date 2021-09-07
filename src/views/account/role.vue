@@ -126,7 +126,7 @@ export default {
       showPermission: false,
       curRoleId: '',
       curRoleName: '',
-      // 菜单映射表
+      // 菜单(不包含按钮)映射表
       actionMap: {}
     }
   },

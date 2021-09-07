@@ -7,6 +7,8 @@ import storage from '../utils/storage'
 
 const state = {
     userInfo: storage.getItem('userInfo') || {}, // 获取用户信息
+    menuList: storage.getItem('menuList') || [], // 获取当前用户所有权限(菜单+按钮)
+    actionList: storage.getItem('actionList') || [] // 获取当前用户所有按钮权限
 }
 export default createStore({
     state,

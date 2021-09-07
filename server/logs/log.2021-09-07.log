@@ -1,0 +1,14 @@
+[2021-09-07T14:46:12.248] [ERROR] error - ReferenceError: Cannot access 'roleList' before initialization
+    at getMenuList (D:\study\manager-fe\server\routes\users.js:173:54)
+    at D:\study\manager-fe\server\routes\users.js:162:26
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at next (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:45:18)
+    at D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:346:16
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:44:32)
+    at D:\study\manager-fe\server\node_modules\koa-router\node_modules\koa-compose\index.js:36:12
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-router\lib\router.js:351:31)
+    at dispatch (D:\study\manager-fe\server\node_modules\koa-compose\index.js:42:32)
+    at jwt (D:\study\manager-fe\server\node_modules\koa-jwt\lib\index.js:73:16)
+    at async D:\study\manager-fe\server\app.js:37:3
+    at async serve (D:\study\manager-fe\server\node_modules\koa-static\index.js:53:9)
+    at async bodyParser (D:\study\manager-fe\server\node_modules\koa-bodyparser\index.js:95:5)
