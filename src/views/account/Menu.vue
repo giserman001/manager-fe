@@ -58,29 +58,29 @@
         </el-form-item>
         <el-form-item label="菜单类型" prop="menuType">
           <el-radio-group v-model="menuForm.menuType">
-            <el-radio label="1">菜单</el-radio>
-            <el-radio label="2">按钮</el-radio>
+            <el-radio :label="1">菜单</el-radio>
+            <el-radio :label="2">按钮</el-radio>
           </el-radio-group>
         </el-form-item>
         <el-form-item label="菜单名称" prop="menuName">
           <el-input v-model="menuForm.menuName" placeholder="请输入菜单名称" />
         </el-form-item>
-        <el-form-item label="菜单图标" prop="icon" v-if="menuForm.menuType === '1'">
+        <el-form-item label="菜单图标" prop="icon" v-if="menuForm.menuType === 1">
           <el-input v-model="menuForm.icon" placeholder="请输入菜单图标" />
         </el-form-item>
-        <el-form-item label="路由地址" prop="path" v-if="menuForm.menuType === '1'">
+        <el-form-item label="路由地址" prop="path" v-if="menuForm.menuType === 1">
           <el-input v-model="menuForm.path" placeholder="请输入路由地址" />
         </el-form-item>
-        <el-form-item label="权限标识" prop="menuCode" v-if="menuForm.menuType === '2'">
+        <el-form-item label="权限标识" prop="menuCode" v-if="menuForm.menuType === 2">
           <el-input v-model="menuForm.menuCode" placeholder="请输入权限标识" />
         </el-form-item>
-        <el-form-item label="组件路径" prop="component" v-if="menuForm.menuType === '1'">
+        <el-form-item label="组件路径" prop="component" v-if="menuForm.menuType === 1">
           <el-input v-model="menuForm.component" placeholder="请输入组件路径" />
         </el-form-item>
-        <el-form-item label="菜单状态" prop="menuState" v-if="menuForm.menuType === '1'">
+        <el-form-item label="菜单状态" prop="menuState" v-if="menuForm.menuType === 1">
           <el-radio-group v-model="menuForm.menuState">
-            <el-radio label="1">正常</el-radio>
-            <el-radio label="2">停用</el-radio>
+            <el-radio :label="1">正常</el-radio>
+            <el-radio :label="2">停用</el-radio>
           </el-radio-group>
         </el-form-item>
       </el-form>
@@ -154,8 +154,8 @@ export default {
       action: 'add',
       menuForm: {
         parentId: [null],
-        menuType: '1',
-        menuState: '1'
+        menuType: 1,
+        menuState: 1
       }
     }
   },
@@ -192,6 +192,7 @@ export default {
       this.action = 'edit'
       this.$nextTick(() => {
         this.menuForm = row
+        console.log(this.menuForm, 'this.menuForm')
       })
     },
     async delFn(id) {

@@ -190,6 +190,7 @@ router.get("/getPermissionList", async (ctx) => {
   let authorization = ctx.request.headers.authorization;
   // 解密token
   const { data } = util.decoded(authorization);
+  
   const menuList = await getMenuList(data.role, data.roleList);
   const actionList = await getActionList(JSON.parse(JSON.stringify(menuList)));
   ctx.body = util.success({ menuList, actionList });
@@ -197,10 +198,11 @@ router.get("/getPermissionList", async (ctx) => {
 
 // 获取所有权限
 async function getMenuList(userRole, roleList) {
+  console.log('roles=>', userRole, roleList)
   let rootList = [];
   if (userRole == 0) {
     // 管理员 查询所有菜单
-    rootList = (await Menu.find({})) || [];
+    rootList = await Menu.find({}) || [];
   } else {
     // 根据用户拥有的角色获取权限列表，先查找用户对用哪些角色，然后通过角色去查找权限
     let roles = await Role.find({ _id: { $in: [...roleList] } });

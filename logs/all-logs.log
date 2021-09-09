@@ -12,3 +12,33 @@
 [2021-08-23T16:59:20.242] [INFO] info - ****数据库连接成功****
 [2021-08-23T16:59:35.741] [INFO] info - get params:{}
 [2021-08-23T16:59:35.743] [INFO] info - post params:{}
+[2021-09-09T17:55:14.604] [INFO] info - ****数据库连接成功****
+[2021-09-09T17:55:31.434] [INFO] info - get params:{"menuState":"1"}
+[2021-09-09T17:55:31.435] [INFO] info - post params:{}
+[2021-09-09T17:55:31.455] [INFO] info - get params:{}
+[2021-09-09T17:55:31.455] [INFO] info - post params:{}
+[2021-09-09T17:57:17.067] [INFO] info - get params:{"menuState":"1"}
+[2021-09-09T17:57:17.067] [INFO] info - post params:{}
+[2021-09-09T17:57:17.089] [INFO] info - get params:{}
+[2021-09-09T17:57:17.090] [INFO] info - post params:{}
+[2021-09-09T17:59:10.107] [INFO] info - get params:{"menuState":"1"}
+[2021-09-09T17:59:10.108] [INFO] info - post params:{}
+[2021-09-09T17:59:10.115] [INFO] info - get params:{}
+[2021-09-09T17:59:10.115] [INFO] info - post params:{}
+[2021-09-09T17:59:20.132] [INFO] info - ****数据库连接成功****
+[2021-09-09T18:03:47.047] [INFO] info - get params:{"menuState":"1"}
+[2021-09-09T18:03:47.048] [INFO] info - post params:{}
+[2021-09-09T18:03:47.051] [INFO] info - get params:{}
+[2021-09-09T18:03:47.052] [INFO] info - post params:{}
+[2021-09-09T18:03:55.216] [INFO] info - get params:{"menuState":"1"}
+[2021-09-09T18:03:55.217] [INFO] info - post params:{}
+[2021-09-09T18:03:55.219] [INFO] info - get params:{}
+[2021-09-09T18:03:55.219] [INFO] info - post params:{}
+[2021-09-09T18:03:56.240] [INFO] info - get params:{"menuState":"1"}
+[2021-09-09T18:03:56.240] [INFO] info - post params:{}
+[2021-09-09T18:03:56.243] [INFO] info - get params:{}
+[2021-09-09T18:03:56.244] [INFO] info - post params:{}
+[2021-09-09T18:03:56.865] [INFO] info - get params:{"menuState":"1"}
+[2021-09-09T18:03:56.866] [INFO] info - post params:{}
+[2021-09-09T18:03:56.869] [INFO] info - get params:{}
+[2021-09-09T18:03:56.869] [INFO] info - post params:{}

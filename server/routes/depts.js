@@ -25,7 +25,6 @@ router.get('/list', async (ctx) => {
         let params = {}
         if (deptName) params.deptName = deptName
         const rootList = await Dept.find(params)
-        console.log('rootList=>', rootList)
         if (deptName) {
             ctx.body = util.success(rootList)
         } else {
